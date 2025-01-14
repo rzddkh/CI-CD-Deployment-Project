@@ -24,6 +24,7 @@ jobs:
           command: |
             google-chrome --version
             chromedriver --version
+            CHROME_BIN=/usr/bin/google-chrome karma start --single-run
           name: Check install
       # Use root level package.json to install dependencies in the frontend app
       - run:
