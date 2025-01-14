@@ -48,10 +48,8 @@ jobs:
             echo "TODO: Test The Front end"
             wget -q -O - https://dl-ssl.google.com/linux/linux_signing_key.pub | sudo apt-key add -
             sudo su -c "echo 'deb http://dl.google.com/linux/chrome/deb/ stable main' > sudo /etc/apt/sources.list.d/google.list"
-            USER root
-            RUN apt-get update
-            RUN apt-get install -y google-chrome-stable xvfb
-            USER $NB_UID
+            sudo su apt-get update
+            sudo su apt-get install -y google-chrome-stable xvfb
             npm run frontend:test
       # TODO: END-To-END Test The Fronend
       - run:
