@@ -39,25 +39,25 @@ jobs:
       - run:
           name: Front-End Lint
           command: |
-            echo "TODO: Lint the frontend"
+            echo "TODO: Lint the Front end"
             npm run frontend:lint
-      # TODO: Test the frontend      
+      # TODO: Test The Frontend
       - run:
           name: Front-End Test
           command: |
-          echo "TODO: Test the frontend"
-          npm run frontend:test      
-      # TODO: END-To-END Test the fronend
+            echo "TODO: Test The Front end"
+            npm run frontend:test
+      # TODO: END-To-END Test The Fronend
       - run:
           name: Front-End END-To-END Test
           command: |
-          echo "TODO: END-To-END Test the frontend"
-          npm run frontend:e2e  
+            echo "TODO: END-To-END Test the front end"
+            npm run frontend:e2e
       # TODO: Build the frontend app
       - run:
           name: Front-End Build
           command: |
-            echo "TODO: Build the frontend app"
+            echo "TODO: Build the front end app"
             npm run fronend:build
       # TODO: Build the backend API
       - run:
