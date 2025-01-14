@@ -1,7 +1,7 @@
-import * as dotenv from "dotenv";
+import * as dotenv from 'dotenv';
 dotenv.config();
 
-// ENV variables 
+// ENV variables
 // - AWS_ACCESS_KEY_ID
 // - AWS_SECRET_ACCESS_KEY
 // Are Also needed
@@ -18,4 +18,7 @@ export const config = {
   jwt: {
     secret: process.env.JWT_SECRET,
   },
+  aws_access_key: process.env.AWS_ACCESS_KEY,
+  aws_secret: process.env.AWS_SECRET,
+  port: process.env.DB_PORT,
 };
