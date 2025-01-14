@@ -4,6 +4,7 @@ orbs:
   node: circleci/node@5.0.2
   eb: circleci/aws-elastic-beanstalk@2.0.1
   aws-cli: circleci/aws-cli@3.1.1
+  browser-tools: circleci/browser-tools@1.5.0
   # different jobs are calles later in the workflows sections
 jobs:
   build:
@@ -16,6 +17,14 @@ jobs:
           node-version: '14.15'
       - checkout
       - aws-cli/setup
+      - browser-tools/install-chrome
+      - browser-tools/install-chromedriver
+      # Installing Chrome for front end testing
+      - run:
+          command: |
+            google-chrome --version
+            chromedriver --version
+          name: Check install
       # Use root level package.json to install dependencies in the frontend app
       - run:
           name: Install Front-End Dependencies
