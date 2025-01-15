@@ -44,26 +44,6 @@ jobs:
             echo "NPM --version" 
             echo $(npm --version)
             npm run api:install
-      # TODO: Lint the frontend
-      - run:
-          name: Front-End Lint
-          command: |
-            echo "TODO: Lint the Front end"
-            npm run frontend:lint
-      # TODO: Test The Frontend
-      #- run:
-      #   name: Front-End Test
-      #  command: |
-      #    echo "TODO: Test The Front end"
-      #    env | grep CHROME_BIN
-      #   npm run frontend:test
-
-      # TODO: END-To-END Test The Fronend
-      - run:
-          name: Front-End END-To-END Test
-          command: |
-            echo "TODO: END-To-END Test the front end"
-            npm run frontend:e2e
       # TODO: Build the frontend app
       - run:
           name: Front-End Build
@@ -76,7 +56,26 @@ jobs:
           command: |
             echo "TODO: Build the backend API"
             npm run api:build
-  # deploy step will run only after manual approval
+      # TODO: Lint the frontend
+      - run:
+          name: Front-End Lint
+          command: |
+            echo "TODO: Lint the Front end"
+            npm run frontend:lint
+      # TODO: Test The Frontend
+      - run:
+          name: Front-End Test
+          command: |
+            echo "TODO: Test The Front end"
+            env | grep CHROME_BIN
+            npm run frontend:test
+      # TODO: END-To-END Test The Frontend
+      - run:
+          name: Front-End END-To-END Test
+          command: |
+            echo "TODO: END-To-END Test the front end"
+            npm run frontend:e2e
+    # deploy step will run only after manual approval
   deploy:
     docker:
       - image: 'cimg/base:stable'
