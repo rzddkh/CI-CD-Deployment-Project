@@ -17,7 +17,7 @@ jobs:
           node-version: '14.15'
       - checkout
       - aws-cli/setup
-      - browser-tools/install-chrome
+      - browser-tools/install-chrome: channel: stable
       - browser-tools/install-chromedriver
         # Installing Chrome for front end testing
       - run:
