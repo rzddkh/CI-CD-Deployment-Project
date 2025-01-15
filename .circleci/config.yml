@@ -60,11 +60,11 @@ jobs:
 
       # TODO: END-To-END Test The Fronend
       - run:
-         name: Front-End END-To-END Test
-         command: |
-          echo "TODO: END-To-END Test the front end"
-          npm run frontend:e2e
-       TODO: Build the frontend app
+          name: Front-End END-To-END Test
+          command: |
+            echo "TODO: END-To-END Test the front end"
+            npm run frontend:e2e
+      # TODO: Build the frontend app
       - run:
           name: Front-End Build
           command: |
