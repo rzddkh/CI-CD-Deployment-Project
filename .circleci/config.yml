@@ -56,7 +56,7 @@ jobs:
         command: |
           echo "TODO: Test The Front end"
           npm run frontend:test
-      # TODO: END-To-END Test The Frontend
+      # TODO: END-To-END Test The Fronend
       - run:
           name: Front-End END-To-END Test
           command: |
@@ -74,7 +74,7 @@ jobs:
           command: |
             echo "TODO: Build the backend API"
             npm run api:build
-      # deploy step will run only after manual approval
+  # deploy step will run only after manual approval
   deploy:
     docker:
       - image: 'cimg/base:stable'
