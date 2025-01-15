@@ -54,9 +54,8 @@ jobs:
       - run:
           name: Front-End Test
           command: |
-          echo "TODO: Test The Front end"
-          env | grep CHROME_BIN
-          npm run frontend:test
+            echo "TODO: Test The Front end"
+            npm run frontend:test
       # TODO: END-To-END Test The Fronend
       - run:
           name: Front-End END-To-END Test
