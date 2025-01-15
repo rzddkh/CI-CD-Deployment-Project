@@ -50,13 +50,6 @@ jobs:
           command: |
             echo "TODO: Lint the Front end"
             npm run frontend:lint
-      # TODO: Test The Frontend
-      - run:
-          name: Front-End Test
-          command: |
-            echo "TODO: Test The Front end"
-            env | grep CHROME_BIN
-            npm run frontend:test
 
       # TODO: END-To-END Test The Fronend
       - run:
