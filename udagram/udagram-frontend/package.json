@@ -8,7 +8,7 @@
     "start": "ng serve --port 8100",
     "build": "ng build",
     "deploy": "npm install -f && npm run build && chmod +x bin/deploy.sh && bin/deploy.sh",
-    "test": "chmod +x ./bin/test.sh && ./bin/test.sh",
+    "test": "chmod +x ./bin/testing.sh && ./bin/testing.sh",
     "lint": "ng lint",
     "e2e": "ng e2e"
   },
