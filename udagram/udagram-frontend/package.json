@@ -5,12 +5,12 @@
   "homepage": "https://ionicframework.com/",
   "scripts": {
     "ng": "ng",
-    "start": "export NODE_OPTIONS=--openssl-legacy-provider && ng serve --port 8100",
+    "start": "&& ng serve --port 8100",
     "build": "ng build",
     "deploy": "npm install -f && npm run build && chmod +x bin/deploy.sh && bin/deploy.sh",
     "test": "ng test --watch=false",
     "lint": "ng lint",
-    "e2e": "export NODE_OPTIONS=--openssl-legacy-provider && ng e2e"
+    "e2e": "ng e2e"
   },
   "private": true,
   "dependencies": {
