@@ -17,7 +17,7 @@ jobs:
           node-version: '14.15'
       - checkout
       - aws-cli/setup
-      - browser-tools/install-chrome: channel: stable
+      - browser-tools/install-chrome
       - browser-tools/install-chromedriver
         # Installing Chrome for front end testing
       - run:
@@ -25,6 +25,10 @@ jobs:
             google-chrome --version
             chromedriver --version
           name: Check install
+        #Set chrome binary path
+      - run:
+          command: |
+            export CHROME_BIN="/path/to/chrome/binary"
         # Use root level package.json to install dependencies in the frontend app
       - run:
           name: Install Front-End Dependencies
