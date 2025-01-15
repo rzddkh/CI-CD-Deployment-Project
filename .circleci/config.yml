@@ -69,7 +69,7 @@ jobs:
           name: Front-End Build
           command: |
             echo "TODO: Build the front end app"
-            npm run fronend:build
+            npm run frontend:build
       # TODO: Build the backend API
       - run:
           name: API Build
