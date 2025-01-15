@@ -57,7 +57,6 @@ jobs:
             echo "TODO: Test The Front end"
             env | grep CHROME_BIN
             npm run frontend:test
-          enviroment: CHROME_BIN=/usr/bin/google-chrome karma start --single-run
 
       # TODO: END-To-END Test The Fronend
       - run:
