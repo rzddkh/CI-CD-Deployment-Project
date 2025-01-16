@@ -60,12 +60,6 @@ jobs:
           command: |
             echo "TODO: Test The Front end"
             npm run frontend:test
-      # TODO: END-To-END Test The Fronend
-      - run:
-          name: Front-End END-To-END Test
-          command: |
-            echo "TODO: END-To-END Test the front end"
-            npm run frontend:e2e
       # TODO: Build the frontend app
       - run:
           name: Front-End Build
@@ -78,6 +72,12 @@ jobs:
           command: |
             echo "TODO: Build the backend API"
             npm run api:build
+      # TODO: END-To-END Test The Fronend
+      - run:
+          name: Front-End END-To-END Test
+          command: |
+            echo "TODO: END-To-END Test the front end"
+            npm run frontend:e2e
   test:
   # deploy step will run only after manual approval
   deploy:
