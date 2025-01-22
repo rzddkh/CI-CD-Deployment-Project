@@ -54,12 +54,7 @@ jobs:
           command: |
             echo "TODO: Lint the Front end"
             npm run frontend:lint
-        # TODO: Test The Frontend
-      - run:
-          name: Front-End Test
-          command: |
-            echo "TODO: Test The Front end"
-            npm run frontend:test
+
       # TODO: Build the frontend app
       - run:
           name: Front-End Build
@@ -79,6 +74,17 @@ jobs:
       #  echo "TODO: END-To-END Test the front end"
       #  npm run frontend:e2e
   test:
+    docker:
+      - image: cimg/base:2023.03
+    steps:
+      - checkout
+        # TODO: Test The Frontend
+      - run:
+          name: Front-End Test
+          command: |
+            echo "TODO: Test The Front end"
+            npm run frontend:test
+
   # deploy step will run only after manual approval
   deploy:
     docker:
