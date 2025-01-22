@@ -61,7 +61,7 @@ The e2e tests are using Protractor and Jasmine.
 
 ## Status Badge From CircleCi
 
-[![CircleCI](https://dl.circleci.com/status-badge/img/circleci/LgpDtQL6RUq39zEZkhKpe/PgfTJFr4PdDovapNcqDYT/tree/main.svg?style=svg)](https://dl.circleci.com/status-badge/redirect/circleci/LgpDtQL6RUq39zEZkhKpe/PgfTJFr4PdDovapNcqDYT/tree/main)
+[![CircleCI](https://app.circleci.com/pipelines/circleci/LgpDtQL6RUq39zEZkhKpe/PgfTJFr4PdDovapNcqDYT/57/workflows/6b1e5015-7a5d-4928-84c3-9ec1c684a50e)](https://dl.circleci.com/status-badge/redirect/circleci/LgpDtQL6RUq39zEZkhKpe/PgfTJFr4PdDovapNcqDYT/tree/main)
 
 ## License
 
