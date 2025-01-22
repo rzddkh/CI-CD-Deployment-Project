@@ -107,7 +107,7 @@ workflows:
   udagram:
     jobs:
       - build
-      - test:
+      - test
       - hold:
           filters:
             branches:
